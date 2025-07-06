@@ -1,11 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Router from './Router/router';
 
-function App() {
+const App = () => {
+
+
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <div className='min-h-screen bg-gradient-to-br pt-5 pb-5  from-blue-50 to-indigo-100'>
+      <div className=" mx-11">
 
-export default App
+        <Router />
+
+      </div>
+    </div>
+  );
+};
+
+export default App;
