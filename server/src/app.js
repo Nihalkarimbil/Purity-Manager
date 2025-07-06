@@ -11,7 +11,7 @@ const app = express();
 
 app.use(
     cors({
-        origin: "http://localhost:5173", 
+        origin: "https://purity-manager.vercel.app", 
         credentials: true,
         allowedHeaders: ["Content-Type", "Authorization"],
         methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
