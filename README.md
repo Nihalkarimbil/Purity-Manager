@@ -18,7 +18,7 @@ Follow the steps below to set up and run the application locally on your machine
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Nihalkarimbil/Product-Management-app.git
+git clone https://github.com/Nihalkarimbil/Purity-Manager.git
 cd client
 ```
 
