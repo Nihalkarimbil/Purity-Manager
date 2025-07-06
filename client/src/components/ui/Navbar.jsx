@@ -45,7 +45,7 @@ function Navbar() {
                                     </div>
                                     <div>
                                         <h1 className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">
-                                            Metal Rate Management
+                                            Metal Rate Manager
                                         </h1>
                                         <p className="text-blue-100 text-sm sm:text-base mt-1">
                                             Professional Trading Platform
