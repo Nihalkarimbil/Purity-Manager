@@ -7,7 +7,7 @@ A full-stack **Purity Management Application** built using the **MERN** (MongoDB
 
 ##  Live Demo
 
-👉 [View Deployed App](https://product-management-app-blush.vercel.app)
+👉 [View Deployed App](https://purity-manager.vercel.app)
 
 ---
 
