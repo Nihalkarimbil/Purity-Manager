@@ -93,15 +93,26 @@ function RateHistory() {
                             </tr>
                         </thead>
                         <tbody>
-                            {rates.map((rate) => (
-                                <tr key={rate._id} className="border-b border-gray-100 hover:bg-gray-50">
-                                    <td className="py-3 px-4 text-gray-800">{rate.metal}</td>
-                                    <td className="py-3 px-4 text-gray-800">{rate.purity?.purityName}</td>
-                                    <td className="py-3 px-4 font-semibold text-green-600">₹{rate.rate}</td>
-                                    <td className="py-3 px-4 text-gray-600">{new Date(rate.rateDate).toLocaleDateString()}</td>
+                            {Array.isArray(rates) && rates.length > 0 ? (
+                                rates.map((rate) => (
+                                    <tr key={rate._id} className="border-b border-gray-100 hover:bg-gray-50">
+                                        <td className="py-3 px-4 text-gray-800">{rate.metal}</td>
+                                        <td className="py-3 px-4 text-gray-800">{rate.purity?.purityName}</td>
+                                        <td className="py-3 px-4 font-semibold text-green-600">₹{rate.rate}</td>
+                                        <td className="py-3 px-4 text-gray-600">
+                                            {new Date(rate.rateDate).toLocaleDateString()}
+                                        </td>
+                                    </tr>
+                                ))
+                            ) : (
+                                <tr>
+                                    <td colSpan="4" className="text-center text-gray-500 py-6">
+                                        No rates found.
+                                    </td>
                                 </tr>
-                            ))}
+                            )}
                         </tbody>
+
                     </table>
                     {rates.length === 0 && (
                         <div className="text-center text-gray-500 py-6">No rates found.</div>
